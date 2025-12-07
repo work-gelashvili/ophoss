@@ -4,7 +4,7 @@ const Logo = () => {
     return (
         <div className={`${Style['header__logo']}`}>
             <h1 className='d-flex align-items-center'>
-                OPHOSS <span>•</span> DIGITAL
+                OPHOS <span>•</span> DIGITAL
             </h1>
         </div>
     )

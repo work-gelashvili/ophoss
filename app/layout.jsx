@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '@styles/global.css'
 
 export const metadata = {
-    title: `OPHOSS • DIGITAL`,
+    title: `OPHOS • DIGITAL`,
     description: 'საიტების დამზადება'
 }
 

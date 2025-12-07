@@ -1,5 +1,5 @@
 import CallBtn from '@components/Header/CallBtn'
-import style from './SlideShow.module.scss'
+import style from './FirstSection.module.scss'
 
 const Text = () => {
     return (

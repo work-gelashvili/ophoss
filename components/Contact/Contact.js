@@ -17,16 +17,16 @@ const Contact = () => {
                     <div className="col-12 col-lg-4">
                         <h1>CONTACT</h1>
                         <p>(995) 591 111 996</p>
-                        <p>info@ophoss.digital</p>
+                        <p>info@ophos.digital</p>
                     </div>
                     <div className="col-12 col-lg-4">
                         <span className={`${style['contact-soc']}`}>
-                            <Link href={'https://www.facebook.com/ophoss.digital'} target='_black'>
+                            <Link href={'https://www.facebook.com/ophos.digital'} target='_black'>
                                 <LiaFacebookSquare />
                             </Link>
                         </span>
                         <span className={`${style['contact-soc']}`}>
-                            <Link href={'https://www.linkedin.com/company/ophoss/'}  target='_black'> 
+                            <Link href={'https://www.linkedin.com/company/ophos-digital/'}  target='_black'> 
                                 <LiaLinkedin />
                             </Link>
                         </span>

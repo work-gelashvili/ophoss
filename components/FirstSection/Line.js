@@ -1,4 +1,4 @@
-import style from './SlideShow.module.scss'
+import style from './FirstSection.module.scss'
 
 const Line = () => {
     return (

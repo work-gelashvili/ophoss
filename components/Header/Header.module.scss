@@ -32,10 +32,24 @@
 
         &--link {
             // display: block;
-            padding: 6px 12px;
+            padding: 8px 18px;
             text-decoration: none;
             color: #484965;
-            font-size: 16px;
+            font-size: 18px;
+            line-height: 16px;
+        }
+
+        &--ecommerce {
+            margin-right: 36px;
+            background-color: #873eff;
+            border-radius: 8px;
+            color: #fff;
+        }
+
+        &--startupper {
+            background-color: #079629;
+            color: #fff;
+            border-radius: 8px;
         }
     }
 

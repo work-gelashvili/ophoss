@@ -1,6 +1,6 @@
-import style from './Team.module.scss'
+import style from './styles.module.scss'
 
-const Item = ({item}) => {
+const TeamItem = ({item}) => {
     return (
         <div className={`${style['team__item']}`}>
             <div className={`${style['team__item--cover']}`}>
@@ -16,4 +16,4 @@ const Item = ({item}) => {
     )
 }
 
-export default Item
+export default TeamItem

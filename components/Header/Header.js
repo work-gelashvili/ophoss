@@ -33,12 +33,11 @@ const Header = ({fixBg, style}) => {
         >
         <div className='container'>
             <div className='row align-items-center'>
-                <div className='col-lg-10 d-flex'>
+                <div className='col-auto'>
                     <Logo />
-                    <Menu />
                 </div>
-                <div className='col-2 d-none justify-content-end'>
-                    ka
+                <div className='col'>
+                    <Menu />
                 </div>
             </div>
         </div>

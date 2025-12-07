@@ -13,7 +13,7 @@ const Services = () => {
             <div className='container'>
                 <div className={`${style['services__head']}`}>
                     <h1 className={`${style['services__head--title']}`}>
-                        SERVICES
+                        სერვისები
                     </h1>
                 </div>
                 <div className={`${style['services__list']}`}>

@@ -3,10 +3,11 @@
     padding-top: 100px;
     position: relative;
 }
-@media (min-width: 1024px) {
+
+@media (min-width: 911px) {
     .container {
-        max-width: 1024px;
-    }    
+        max-width: 911px;
+    }
 }
 
 
@@ -17,17 +18,33 @@
     top: 0;
     left: 50%;
     transform: 'translateX(-50%)';
+
+    @media (max-width: 992px) {
+        width: 100%;
+        height: unset;
+        position: relative;
+        padding-top: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
 }
 
 .text {
-    width: 200px;
-    padding: 30px;
+    padding: 8px 18px;
     font-size: 32px;
+    line-height: 34px;
     margin: 0;
     background-color: #fff;
-    box-shadow: 0px 0px 20px 20px #fff;
+    box-shadow: 0px 0px 84px 58px #ffffff;
     position: absolute;
     text-align: center;
+    border-radius: 50px;
+
+    @media (max-width: 992px) {
+        position: relative;
+        box-shadow: unset;
+    }
 }
 
 .line {
@@ -38,18 +55,17 @@
 }
 
 .item {
-    width: 100%;
     height: 98px;
-    position: relative;
-}
-
-.card {
-    position: absolute;
     padding: 16px;
     border: 1px solid rgba(230, 230, 230, .7);
     background-color: rgba(230, 230, 230, .3);
     border-radius: 102px 32px 32px 102px;
+
+    @media (max-width: 992px) {
+        margin: 0 !important;
+    }
 }
+
 
 .cover {
     width: 64px;
@@ -79,14 +95,14 @@
 }
 
 .title {
-    width: 150px;
-    padding-right: 30px;
+    width: 130px;
+    // padding-right: 30px;
     margin: 0;
     font-size: 16px;
     color: #484965;
 }
 
-.list{
+.list {
     width: 100%;
     height: 100%;
     position: relative;

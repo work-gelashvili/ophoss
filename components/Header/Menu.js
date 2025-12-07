@@ -1,38 +1,48 @@
 "use client"
 
-
 import Link from 'next/link'
 import Style from './Header.module.scss'
 
-const data = [
-    {
-        to: '/',
-        name: 'Home',
-    },
-    {
-        to: '/ecommerce',
-        name: 'E-COMMERCE',
-    }
-]
-
 const Menu = () => {
     return (
-        <ul className={`${Style['header__menu']} d-none align-items-center`}>
-            {
-                data && data.map( item => {
-                    return (
-                        <li className={`${Style['header__menu--item']}`} key={item.name}>
-                            <Link 
-                                href={item.to} 
-                                className={`${Style['header__menu--link']}`}
-                                >
-                                    {item.name}
-                            </Link>
-                        </li>
-                    )
-                })
-            }
-        </ul>
+        <div className='d-flex justify-content-between'>
+            <ul className={`${Style['header__menu']} d-flex align-items-center`}>
+                <li className={`${Style['header__menu--item']}`} >
+                    <Link
+                        href={'/'}
+                        className={`${Style['header__menu--link']} `}
+                    >
+                        Home
+                    </Link>
+                </li>
+                <li className={`${Style['header__menu--item']}`} >
+                    <Link
+                        href={'/team'}
+                        className={`${Style['header__menu--link']} `}
+                    >
+                        Team
+                    </Link>
+                </li>
+            </ul>
+            <ul className={`${Style['header__menu']} d-flex align-items-center`}>
+                <li className={`${Style['header__menu--item']}`} >
+                    <Link
+                        href={'/ecommerce'}
+                        className={`${Style['header__menu--link']} ${Style['header__menu--ecommerce']}`}
+                    >
+                        E-COMMERCE
+                    </Link>
+                </li>
+                <li className={`${Style['header__menu--item']}`} >
+                    <Link
+                        href={'/startupper'}
+                        className={`${Style['header__menu--link']} ${Style['header__menu--startupper']}`}
+                    >
+                        STARTUPPER
+                    </Link>
+                </li>
+            </ul>
+        </div>
     )
 }
 

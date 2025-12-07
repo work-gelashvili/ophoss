@@ -1,22 +1,20 @@
 import style from './Services.module.scss'
 
-const Item = ({item}) => {
+const Item = ({ item }) => {
     return (
         <>
-        {
-            item && (
-                <div className={`${style['services__item']}`} >
-                    <div className={`${style['services__item--title']}`}>
-                        <h1 className={`${style['services__item--title_text']}`}>
-                            {item.title}
-                        </h1>
+            {
+                item && (
+                    <div className={`${style['services__item']}`} >
+                        <div className={`${style['services__item--title']}`}>
+                            <h1 className={`${style['services__item--title_text']}`}>
+                                {item.title}
+                            </h1>
+                        </div>
+                        <div className={`${style['services__item--desc']}`} dangerouslySetInnerHTML={{ __html: item.body }}></div>
                     </div>
-                    <div className={`${style['services__item--desc']}`}>
-                        {item.body} 
-                    </div>
-                </div>
-            )
-        }
+                )
+            }
         </>
     )
 }
